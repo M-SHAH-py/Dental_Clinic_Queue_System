@@ -1,33 +1,140 @@
-Dental Clinic Smart Queue & Load Balancer System
-A Python-based queue management system designed to improve patient flow and workload distribution in a dental clinic. The system automates patient registration, prioritizes appointments, supports preferred dentist selection, and provides real-time status updates using Object-Oriented Programming principles.
-________________________________________
-Features
-•	Automated patient queue management
-•	Appointment priority handling
-•	Preferred dentist assignment logic
-•	Intelligent load balancing
-•	Real-time dentist availability tracking
-•	Performance metrics (patients served, average wait time)
-•	Interactive Command-Line Interface (CLI)
-________________________________________
-Technologies Used
-•	Python
-•	Object-Oriented Programming (OOP)
-•	datetime module
-•	Command-Line Interface (CLI)
-________________________________________
-Project Objective
-To reduce waiting time, prevent uneven dentist workload, and improve overall clinic efficiency through an intelligent and automated system.
-________________________________________
-Future Enhancements
-•	Database integration for persistent data storage
-•	Web or GUI-based interface
-•	Advanced scheduling and analytics
-________________________________________
-Contributors
-•	Muhammad Shahzaib
-•	Faiqa
-•	Eisha
-•	Haroon
-•	Rida
+# Dental Clinic Smart Queue Management System
 
+## Overview
+
+This project is a Dental Clinic Smart Queue Management System developed using **Python** and **Oracle Database**.
+
+The system manages patient registration, visit scheduling, dentist assignment, smart queue handling, and performance metrics.
+
+This project integrates a Python application with Oracle Database to demonstrate database connectivity, SQL operations, and queue management algorithms.
+
+---
+
+## Features
+
+- Patient Registration
+- Visit Registration
+- Dentist Management
+- Specialty-based Assignment
+- Smart Queue Management
+- Load Balancing
+- Queue Priority
+- Performance Metrics
+- Oracle Database Integration
+
+---
+
+## Technologies Used
+
+- Python
+- Oracle Database 21c XE
+- SQL
+- OracleDB Python Driver
+
+---
+
+## Database
+
+The project contains the complete Oracle SQL script.
+
+```
+dental_clinic_database.sql
+```
+
+This script creates:
+
+- Specialty
+- Dentist
+- Patient
+- Treatment
+- Visit
+- Queue
+- Assignment
+
+tables with all constraints and relationships.
+
+---
+
+## Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/Dental_Clinic_Queue_System.git
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Create Oracle Database
+
+Run
+
+```
+dental_clinic_database.sql
+```
+
+inside Oracle SQL Developer.
+
+---
+
+## Configure Database
+
+Open
+
+```
+app.py
+```
+
+Update:
+
+```python
+connection = oracledb.connect(
+    user="YOUR_USERNAME",
+    password="YOUR_PASSWORD",
+    dsn="localhost:1521/XEPDB1"
+)
+```
+
+---
+
+## Run
+
+```bash
+python app.py
+```
+
+---
+
+## Project Modules
+
+1. Register Patient
+2. Register Visit
+3. Queue Status
+4. Load Balancer
+5. Complete Visit
+6. Performance Metrics
+
+---
+
+## Learning Outcomes
+
+- Oracle Database
+- SQL
+- Python Database Connectivity
+- Queue Management
+- Load Balancing
+- Relational Database Design
+
+---
+
+## Author
+
+Your Name
+
+BS Computer Science
+
+University Project
