@@ -133,8 +133,8 @@ python app.py
 
 ## Author
 
-Your Name
+MUHAMMAD SHAHZAIB
 
-BS Computer Science
+BS BUSINESS DATA ANALYTICS
 
 University Project
